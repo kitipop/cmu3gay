@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPCMove : TacticsMove 
+public class NPCMove : TacticsMove
 {
     GameObject target;
 
-	// Use this for initialization
-	void Start () 
-	{
+    // Use this for initialization
+    void Start()
+    {
         Init();
-	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         Debug.DrawRay(transform.position, transform.forward);
 
         if (!turn)
@@ -33,7 +33,7 @@ public class NPCMove : TacticsMove
         {
             Move();
         }
-	}
+    }
 
     void CalculatePath()
     {
