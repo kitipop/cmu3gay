@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour 
 {
+    public enum TileType
+    {
+        normal,
+        sprite
+    }
+
+    public TileType m_tileType = TileType.normal;
+
     public bool walkable = true;
     public bool current = false;
     public bool target = false;
@@ -21,14 +29,26 @@ public class Tile : MonoBehaviour
     public float g = 0;
     public float h = 0;
 
-	// Use this for initialization
-	void Start () 
-	{
+    [Header("sprite")]
+    public GameObject spritePotoType;
+    public float spriteYPos;
 
-	}
-	
-	// Update is called once per frame
-	void Update () 
+    // Use this for initialization
+    void Start () 
+	{
+        if (m_tileType == TileType.sprite)
+        {
+            createSprite();
+        }
+    }
+    private void createSprite()
+    {
+        if (spritePotoType != null)
+            Instantiate(spritePotoType, transform.position + Vector3.up * spriteYPos, Quaternion.identity, transform);
+    }
+
+    // Update is called once per frame
+    void Update () 
 	{
         if (current)
         {

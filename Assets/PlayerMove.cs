@@ -38,13 +38,14 @@ public class PlayerMove : TacticsMove
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.tag == "Tile")
+                if (hit.collider.tag == "Tile" && !myTurnManager.Instance.IsOver)
                 {
                     Tile t = hit.collider.GetComponent<Tile>();
 
                     if (t.selectable)
                     {
                         MoveToTile(t);
+                        myTurnManager.Instance.PassTurn();
                     }
                 }
             }

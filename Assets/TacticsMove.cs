@@ -150,6 +150,14 @@ public class TacticsMove : MonoBehaviour
                 //Tile center reached
                 transform.position = target;
                 path.Pop();
+                // stop sprite
+                if (t.m_tileType == Tile.TileType.sprite && t != currentTile)
+                {
+                    RemoveSelectableTiles();
+                    moving = false;
+
+                    TurnManager.EndTurn();
+                }
             }
         }
         else
