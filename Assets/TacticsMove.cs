@@ -27,7 +27,7 @@ public class TacticsMove : MonoBehaviour
     bool jumpingUp = false;
     bool movingEdge = false;
     Vector3 jumpTarget;
-
+    
     public Tile actualTargetTile;
 
     protected void Init()

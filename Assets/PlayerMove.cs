@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PlayerMove : TacticsMove 
 {
+    [Header("Animation")]
+    public Animator animator;
 
 	// Use this for initialization
 	void Start () 
@@ -22,10 +24,16 @@ public class PlayerMove : TacticsMove
         {
             FindSelectableTiles();
             CheckMouse();
+
+            // animation
+            animator.SetBool("IsRunning", false);
         }
         else
         {
             Move();
+
+            // animation
+            animator.SetBool("IsRunning", true);
         }
 	}
 

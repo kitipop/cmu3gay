@@ -18,6 +18,8 @@ public class myTurnManager : MonoBehaviour
 
     public int StartTurn = 5;
     public int CurrentTurn;
+    public int ExtraTurn = 1;
+
 
     public bool IsOver { get { return (CurrentTurn <= 0) ? true : false; } }
 
@@ -40,7 +42,7 @@ public class myTurnManager : MonoBehaviour
 
     public void GetExtraTurn()
     {
-        CurrentTurn += 1;
+        CurrentTurn += ExtraTurn;
 
         Debug.Log(CurrentTurn);
     }
