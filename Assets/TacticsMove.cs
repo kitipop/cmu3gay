@@ -169,6 +169,14 @@ public class TacticsMove : MonoBehaviour
         }
     }
 
+    public void ClearDATA()
+    {
+        RemoveSelectableTiles();
+        moving = false;
+
+        TurnManager.EndTurn();
+    }
+
     protected void RemoveSelectableTiles()
     {
         if (currentTile != null)
