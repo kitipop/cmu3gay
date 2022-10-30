@@ -1621,6 +1621,10 @@ MonoBehaviour:
   StartTurn: 10
   CurrentTurn: 0
   ExtraTurn: 1
+  turnText: {fileID: 0}
+  onNextTurn:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &240532535
 Transform:
   m_ObjectHideFlags: 0
