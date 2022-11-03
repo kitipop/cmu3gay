@@ -273,6 +273,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Score Master
       objectReference: {fileID: 0}
+    - target: {fileID: 3493497677211856836, guid: 7e93796d9a9bb5e44bb7d16f28517ded,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -18
+      objectReference: {fileID: 0}
     - target: {fileID: 8138687142449659383, guid: 7e93796d9a9bb5e44bb7d16f28517ded,
         type: 3}
       propertyPath: m_Pivot.x

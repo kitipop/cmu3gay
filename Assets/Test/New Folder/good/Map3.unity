@@ -929,7 +929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a139a8beacb2bf34ca096cdef36a4231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartTurn: 10
+  StartTurn: 20
   CurrentTurn: 0
   ExtraTurn: 1
   turnText: {fileID: 1700191067}

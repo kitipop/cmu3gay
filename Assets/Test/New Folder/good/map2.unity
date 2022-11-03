@@ -365,6 +365,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Score Master
       objectReference: {fileID: 0}
+    - target: {fileID: 3493497677211856836, guid: 7e93796d9a9bb5e44bb7d16f28517ded,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22
+      objectReference: {fileID: 0}
     - target: {fileID: 8138687142449659383, guid: 7e93796d9a9bb5e44bb7d16f28517ded,
         type: 3}
       propertyPath: m_Pivot.x
@@ -378,7 +383,7 @@ PrefabInstance:
     - target: {fileID: 8138687142449659383, guid: 7e93796d9a9bb5e44bb7d16f28517ded,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8138687142449659383, guid: 7e93796d9a9bb5e44bb7d16f28517ded,
         type: 3}
@@ -911,7 +916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a139a8beacb2bf34ca096cdef36a4231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartTurn: 10
+  StartTurn: 20
   CurrentTurn: 0
   ExtraTurn: 2
   turnText: {fileID: 1700191067}
@@ -3125,8 +3130,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1091898379}
   - {fileID: 1700191066}
+  - {fileID: 1091898379}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6646,7 +6651,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 751949964}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
