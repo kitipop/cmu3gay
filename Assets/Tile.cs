@@ -7,7 +7,8 @@ public class Tile : MonoBehaviour
     public enum TileType
     {
         normal,
-        sprite
+        sprite,
+        endTile
     }
 
     public TileType m_tileType = TileType.normal;

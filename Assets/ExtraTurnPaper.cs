@@ -6,10 +6,11 @@ public class ExtraTurnPaper : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Enter");
+        //Debug.Log("Enter");
 
         if (other.gameObject.CompareTag("Player"))
         {
+            ScoreManger.Instance.collectPassGate();
             myTurnManager.Instance.GetExtraTurn();
             Destroy(gameObject);
         }

@@ -7,6 +7,9 @@ public class PlayerMove : TacticsMove
     [Header("Animation")]
     public Animator animator;
 
+    [Header("Check to Destination")]
+    public bool isCheckDestination = false;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -18,10 +21,13 @@ public class PlayerMove : TacticsMove
 	{
         Debug.DrawRay(transform.position, transform.forward);
 
-        
-
         if (!moving)
         {
+            if (_currentTile is not null && _currentTile.m_tileType == Tile.TileType.endTile)
+            {
+                ScoreManger.Instance.showResultPanel();
+            }
+
             FindSelectableTiles();
             CheckMouse();
 

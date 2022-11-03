@@ -15,5 +15,6 @@ public class AIRotataion : MonoBehaviour
     public void onNextTurn()
     {
         transform.Rotate((Vector3.up * ((int)ro)) * 90, Space.World);
+        this.GetComponent<studentFriendStopingAI>().updateStopTile();
     }
 }
