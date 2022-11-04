@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6416461114035720107}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,3 +44,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8ee7fef7754fb545a4274fe5d658f14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCollectPassGate: 0
+  resultPanel: {fileID: 0}
+  resultText: {fileID: 0}
+  popUpDuration: 1.2
+  ease: 15
+  stars: []
+  starPopDuration: 0.4
+  popDelay: 0.6
+  starEase: 15
+  starCalculator:
+    star1: 0
+    star2: 0
+    star3: 0

@@ -11,7 +11,7 @@ public class myTurnManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance is null)
+        if (Instance == null)
         {
             Instance = this;
         }
