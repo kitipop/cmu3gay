@@ -12,6 +12,36 @@ EditorBuildSettings:
     path: Assets/Test/New Folder/good/Scen/SceneLV.unity
     guid: 01abde8f39d525d4a92acab80fc89243
   - enabled: 1
+    path: Assets/Test/New Folder/good/Scen/howtoplay.unity
+    guid: 66c6806995fe59f41aa19bf616a13d1f
+  - enabled: 1
+    path: Assets/Test/New Folder/good/Scen/howtoplay1.unity
+    guid: eec642de93bf9c34da2c042837d9aa13
+  - enabled: 1
+    path: Assets/Test/New Folder/good/Scen/Setting.unity
+    guid: 4550966d0343ddc4b9f48b923b43638a
+  - enabled: 1
+    path: Assets/Test/New Folder/good/map0.unity
+    guid: 613f053799354a54b96473b50c68f2df
+  - enabled: 1
     path: Assets/Test/New Folder/good/map1.unity
     guid: 0c28cf63f8b05ec4ba2754d1100cb542
+  - enabled: 1
+    path: Assets/Test/New Folder/good/map2.unity
+    guid: 83f95e3e8a483e043a7910695cbeebda
+  - enabled: 1
+    path: Assets/Test/New Folder/good/map11.unity
+    guid: b931cdf6a9f3dd649a4a47548802c32a
+  - enabled: 1
+    path: Assets/Test/New Folder/good/map3.unity
+    guid: 31166be97a6b839449358b4620475bd5
+  - enabled: 1
+    path: Assets/Test/New Folder/good/map4.unity
+    guid: d9b0f6b1de0c78c47bfe06f45f7f549f
+  - enabled: 1
+    path: Assets/Test/New Folder/good/map5.unity
+    guid: b37fa2068b845c0458e40000516eab9a
+  - enabled: 1
+    path: Assets/Test/New Folder/good/map6.unity
+    guid: 4cc8e9ac7797cfd4a8ab2e931ef91547
   m_configObjects: {}
